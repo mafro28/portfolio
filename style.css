@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --mainColor: #a759c1;
+}
+
+body {
+    background-color: #F3DFFA;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+
+.me {
+    /*transform: rotateY(180deg);*/
+    margin-left: 300px;
+}
+
+header {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 4em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2.3em;
+    font-weight: lighter;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 500px;
+
+}
+
+a {
+    background:
+        linear-gradient(to bottom,
+            var(--mainColor) 0%,
+            var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+}
+
+a:hover {
+    background-size: 4px 50px;
+}
+
+.typewriter {
+
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #a759c1;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(50, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #a759c1
+    }
+}
